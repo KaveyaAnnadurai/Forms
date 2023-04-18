@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Form</title>
+    <style>
+        body{
+            background-image: url('images/medbg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: crimson;
+            height: 100px;
+            font-size: larger;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 2px;
+            letter-spacing: 2px;
+        }
+        #frm{
+            
+           border: 4px;
+           border-style: 1px solid black;
+           align-items: center;
+           border-radius: 10px;
+           justify-content: center;
+           display: flex;
+           background-color: white;
+           width: 510px;
+           margin-left: 30%;
+           padding: 10px;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+      
+        }
+        
+        #button{
+            background-color: red;
+            color:white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 15px;
+            font-family: cursive;
+        }
+        table{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="title">
+        <b>Vignesh Medicals</b> <br>
+    
+    </div>
+    <h3 style="text-align: center; background-color: white;">A Sub-group of Vignesh Enterprises</h3>
+    <br><br>
+<h2 style="text-align: center; ">Customer Registration Form</h2>
+    <form id="frm">
+        <fieldset>
+        <table>
+           
+                <legend >Personal Information</legend>
+            <tr>
+                <td>
+                    <label for="name">Name</label>
+       
+                </td>
+                <td>
+                   <input type="text" id="name">
+       
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="id2">Email Id</label>
+       
+                </td>
+                <td>
+                    <input type="password" id="id2"><br>
+       
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="no">Contact number</label>
+       
+                </td>
+                <td>
+                    <input type="tel" id="no"><br>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gen">Gender</label>
+                </td>
+                <td>
+                    <input type ="radio" name="gen" value="Male">Male
+                    <input type ="radio" name="gen" value="Female">Female
+                    <input type ="radio" name="gen" value="Others">Others
+                    
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td>    <label for="dob">DOB</label>
+
+                </td>
+                <td>
+                    <input type="date" id="dob"><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="city">City</label>
+                </td>
+                <td>
+                    <select id="city">
+                        <option></option>
+                        <option>Chennai</option>
+                        <option>Bangalore</option>
+                        <option>Mumbai</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <input type="checkbox">I agree to the terms and conditions.
+                </td>
+            </tr>
+
+       
+        </table>
+        <input id="button" type="submit">
+    </fieldset>
+         
+
+    
+        
+
+      
+    </form>
+</body>
+</html>
